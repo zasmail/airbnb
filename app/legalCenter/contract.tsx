@@ -35,7 +35,7 @@ function Contract(props) {
       .then(data => {
         // setHtmlResponse(data);
         const allData = JSON.parse(data);
-        debugger;
+        // debugger;
       })
       .catch(error => {
         console.error(error);
