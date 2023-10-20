@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +19,116 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #121212;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.main-section{
+  margin-top: 100px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.w-layout-layout {
+  grid-auto-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  grid-template-rows: auto;
+}
+.left-heavy{
+  grid-template-rows: auto;
+  grid-template-columns: 0.5fr 1fr;
+}
+.w-layout-cell {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.w-nav-brand{
+  position: relative;
+  float: left;
+}
+.w-nav-menu {
+  position: relative;
+  float: right;
+}
+
+.w-nav-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #222222;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ps-contract{
+  display: block !important;
+}
+
+.show-element {
+  display: block !important;
+}
+
+.ps-checkbox-container{
+  display: none !important;
+}
+
+.option{
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: white 1px solid;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.ps-contract-title{
+  display:none !important;
+}
+
+.ps-contract-options{
+  display: none !important;
+}
+
+.ps-contract-body{
+  border: none !important;
+  color: white !important;
+}
+
+#ps-group-terms-en *{
+  color: white !important;
+}
+
+.Navbar_navbar__W2mOs{
+  background-color: #121212 !important;
+  height: 88px;
+  z-index: 100;
 }
