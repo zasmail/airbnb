@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-function ContractOption(props){
+function ContractOption(props: { name: any; lang: any; gkey: any; onClick: any; }){
   const { name, lang, gkey, onClick } = props; 
   
   const handleClick = () => {
