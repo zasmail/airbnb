@@ -59,11 +59,6 @@ export default function LegalCenter(){
         return filtered;
     }
 
-
-    if(selectedContract == null){
-        setSelectedContract(filteredContracts[0]);
-    }
-
     const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedLanguage(event.target.value);
     };
