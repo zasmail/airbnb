@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import Contract from "./contract";
 import ContractOption from "./contractOption";
 
-export default function legalCenter(){
+export default function LegalCenter(){
     const contracts = [
         {
             name: "Netflix Terms of Use",
