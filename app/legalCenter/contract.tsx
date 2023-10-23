@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-function Contract(props) {
+function Contract(props: { name: any; gkey: any; lang?: any; }) {
   const { name, lang, gkey } = props; 
   const [htmlResponse, setHtmlResponse] = useState<string>('');
   const [contractData, setContractData] = useState([]);
