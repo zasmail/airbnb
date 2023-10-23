@@ -50,11 +50,17 @@ export default function legalCenter(){
     const baseUrl = "https://demo.pactsafe.io/load/html?sid=959370e5-c097-42fa-9ec4-ec2538b657ff&gkey="
     const englishGkey = "embedded-h1-fo4r0n"
     const spanishGkey = "embedded-h1-fo4r0n-copy"
-    const filteredContracts = contracts.filter((contract) => contract.lang === selectedLanguage);
+    // const filteredContracts = contracts.filter((contract) => contract.lang === selectedLanguage);
+    const filteredContracts = function(){
+        const filtered = contracts.filter((contract) => contract.lang === selectedLanguage);
+        if(!filtered.some(contract => contract.gkey === selectedContract.gkey)){
+            setSelectedContract(filtered[0]);
+        } 
+        return filtered;
+    }
 
 
     if(selectedContract == null){
-        debugger
         setSelectedContract(filteredContracts[0]);
     }
 
@@ -110,9 +116,9 @@ export default function legalCenter(){
                 </div>
                 <div className="w-layout-layout left-heavy">
                         <div className="w-layout-cell">
-                            <h3 className="option">Contracts   </h3>
+                            {/* <h3 className="option">Contracts   </h3> */}
                             <div className="options-section" id="insert-here">
-                                {filteredContracts.map((contract) => (
+                                {filteredContracts().map((contract) => (
                                     <ContractOption
                                         key={contract.gkey}
                                         onClick={handleChildClick}
@@ -126,6 +132,7 @@ export default function legalCenter(){
                     <div className="w-layout-cell">
                         {/* <div dangerouslySetInnerHTML={{ __html: htmlResponse }} /> */}
                         {/* < Contract name={contracts[0].name} lang={contracts[0].lang} gkey={contracts[0].gkey} /> */}
+                        <h1>{selectedContract.name}</h1>
                         <Contract name={selectedContract.name} lang={selectedContract.lang} gkey={selectedContract.gkey} />
 
 

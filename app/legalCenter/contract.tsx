@@ -42,7 +42,7 @@ function Contract(props) {
     });
 
 
-  }, []);
+  }, [props.name, props.gkey]);
 
   return (
     <div>

@@ -132,3 +132,21 @@ h3 {
   height: 88px;
   z-index: 100;
 }
+#ps-group-gift-es div{
+  color: white !important;
+}
+
+#ps-group-terms-es div{
+  color: white !important;
+}
+
+#ps-group-privacy-en div{
+  color: white !important;
+}
+
+#ps-group-gift-en div{
+  color: white !important;
+}
+#ps-group-privacy-es div{
+  color: white !important;
+}
