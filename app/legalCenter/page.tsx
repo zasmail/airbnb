@@ -63,7 +63,7 @@ export default function LegalCenter(){
         setSelectedLanguage(event.target.value);
     };
 
-    const handleChildClick = (name, gkey) => {
+    const handleChildClick = (name: any, gkey: any) => {
         const tempSelectedContract = contracts.find((contract) => contract.name === name);
         if (tempSelectedContract) {
             setSelectedContract( {
