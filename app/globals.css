@@ -150,3 +150,13 @@ h3 {
 #ps-group-privacy-es div{
   color: white !important;
 }
+
+.versionRow{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.versionElement{
+
+}

@@ -11,32 +11,38 @@ export default function LegalCenter(){
         {
             name: "Netflix Terms of Use",
             lang: "English",
-            gkey: "terms-en"
+            gkey: "terms-en",
+            id: 5628
         },
         {
             name: "Privacy Statement",
             lang: "English",
-            gkey: "privacy-en"
+            gkey: "privacy-en",
+            id: 5625
         },
         {
             name: "Netflix Gift Card and Balance Terms",
             lang: "English",
-            gkey: "gift-en"
+            gkey: "gift-en",
+            id: 5630
         },
         {
             name: "Términos de uso de Netflix",
             lang: "Spanish",
-            gkey: "terms-es"
+            gkey: "terms-es",
+            id: 5629
         },
         {
             name: "Aviso de privacidad",
             lang: "Spanish",
-            gkey: "privacy-es"
+            gkey: "privacy-es",
+            id: 5627
         },
         {
             name: "Términos de las tarjetas de regalo y el saldo de Netflix",
             lang: "Spanish",
-            gkey: "gift-es"
+            gkey: "gift-es",
+            id: 5632
         }]
     const [htmlResponse, setHtmlResponse] = useState<string>('');
     const [selectedLanguage, setSelectedLanguage] = useState('English');
@@ -44,7 +50,9 @@ export default function LegalCenter(){
         {
             name: "Netflix Terms of Use",
             lang: "English",
-            gkey: "terms-en"
+            gkey: "terms-en",
+            id: 5628
+
         }
     );
     const baseUrl = "https://demo.pactsafe.io/load/html?sid=959370e5-c097-42fa-9ec4-ec2538b657ff&gkey="
@@ -69,7 +77,8 @@ export default function LegalCenter(){
             setSelectedContract( {
                 name: tempSelectedContract.name,
                 lang: tempSelectedContract.lang,
-                gkey: tempSelectedContract.gkey
+                gkey: tempSelectedContract.gkey,
+                id: tempSelectedContract.id
             });
             console.log(`Selected Contract: ${selectedContract.name}`);
             // debugger
@@ -127,8 +136,8 @@ export default function LegalCenter(){
                     <div className="w-layout-cell">
                         {/* <div dangerouslySetInnerHTML={{ __html: htmlResponse }} /> */}
                         {/* < Contract name={contracts[0].name} lang={contracts[0].lang} gkey={contracts[0].gkey} /> */}
-                        <h1>{selectedContract.name}</h1>
-                        <Contract name={selectedContract.name} lang={selectedContract.lang} gkey={selectedContract.gkey} />
+                        {/* <h1>{selectedContract.name}</h1> */}
+                        <Contract name={selectedContract.name} lang={selectedContract.lang} gkey={selectedContract.gkey} id={selectedContract.id}/>
 
 
                     </div>
