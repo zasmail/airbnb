@@ -5,6 +5,8 @@ export * from "./devlinkContext";
 export * from "./interactions";
 export * from "./utils";
 export * from "./devlink";
+export * from "./AirbnbFooter";
+export * from "./AirbnbNav";
 export * from "./ContentSection";
 export * from "./Footer";
 export * from "./MainBody";

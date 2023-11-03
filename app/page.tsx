@@ -1,13 +1,13 @@
-import { ContentSection, MainBody, Navbar, Footer } from '@/devlink'
+import { ContentSection, MainBody, Navbar, Footer, AirbnbNav, AirbnbFooter } from '@/devlink'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main>
-      < Navbar />
+      < AirbnbNav />
       < MainBody />
       < ContentSection />
-      < Footer />
+      < AirbnbFooter />
     </main>
   )
 }

@@ -19,8 +19,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #121212;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Open Sans", sans-serif;
   
 }
@@ -36,7 +36,7 @@ h3 {
 
 .container {
   width: 80%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -120,35 +120,47 @@ h3 {
 
 .ps-contract-body{
   border: none !important;
-  color: white !important;
+  color: black !important;
 }
 
 #ps-group-terms-en *{
-  color: white !important;
+  color: black !important;
 }
 
+.Navbar_nav-links___WM6Q{
+  color: black !important;
+
+}
+.AirbnbNav_container-2__5cdRr.AirbnbNav_airbnb__Juv4e{
+  max-width: 1200px;
+}
+.AirbnbNav_airbnb-nav__m1o5B{
+  display: flex;
+  justify-content: center;
+}
 .Navbar_navbar__W2mOs{
-  background-color: #121212 !important;
+  background-color: white !important;
   height: 88px;
   z-index: 100;
+  color: black !important
 }
 #ps-group-gift-es div{
-  color: white !important;
+  color: black !important;
 }
 
 #ps-group-terms-es div{
-  color: white !important;
+  color: black !important;
 }
 
 #ps-group-privacy-en div{
-  color: white !important;
+  color: black !important;
 }
 
 #ps-group-gift-en div{
-  color: white !important;
+  color: black !important;
 }
 #ps-group-privacy-es div{
-  color: white !important;
+  color: black !important;
 }
 
 .versionRow{

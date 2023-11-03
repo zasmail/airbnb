@@ -1,6 +1,6 @@
 "use client"
 
-import { Footer, Navbar } from "@/devlink";
+import { AirbnbFooter, AirbnbNav, Footer, Navbar } from "@/devlink";
 import PactSafeHTMLViewer from './contract'; 
 import React, { useState, useEffect } from 'react';
 import Contract from "./contract";
@@ -9,40 +9,28 @@ import ContractOption from "./contractOption";
 export default function LegalCenter(){
     const contracts = [
         {
-            name: "Netflix Terms of Use",
+            name: "Terms of Service (Non-EU)",
             lang: "English",
             gkey: "terms-en",
-            id: 5628
+            id: 5857
         },
         {
-            name: "Privacy Statement",
+            name: "Payments Terms of Service (Non-EU)",
             lang: "English",
             gkey: "privacy-en",
-            id: 5625
+            id: 5858
         },
         {
-            name: "Netflix Gift Card and Balance Terms",
-            lang: "English",
-            gkey: "gift-en",
-            id: 5630
-        },
-        {
-            name: "Términos de uso de Netflix",
+            name: "Términos de Servicio (Non-EU)",
             lang: "Spanish",
             gkey: "terms-es",
-            id: 5629
+            id: 5860
         },
         {
-            name: "Aviso de privacidad",
+            name: "Términos de Pago del Servicio (Non-EU)",
             lang: "Spanish",
             gkey: "privacy-es",
-            id: 5627
-        },
-        {
-            name: "Términos de las tarjetas de regalo y el saldo de Netflix",
-            lang: "Spanish",
-            gkey: "gift-es",
-            id: 5632
+            id: 5859
         }]
     const [htmlResponse, setHtmlResponse] = useState<string>('');
     const [selectedLanguage, setSelectedLanguage] = useState('English');
@@ -55,7 +43,7 @@ export default function LegalCenter(){
 
         }
     );
-    const baseUrl = "https://demo.pactsafe.io/load/html?sid=959370e5-c097-42fa-9ec4-ec2538b657ff&gkey="
+    const baseUrl = "https://demo.pactsafe.io/load/html?sid=89ba9771-9ccc-4f65-88fa-c02fdbc35df0&gkey="
     const englishGkey = "embedded-h1-fo4r0n"
     const spanishGkey = "embedded-h1-fo4r0n-copy"
     // const filteredContracts = contracts.filter((contract) => contract.lang === selectedLanguage);
@@ -92,7 +80,7 @@ export default function LegalCenter(){
 
     return (
         <div>
-            < Navbar />
+            < AirbnbNav />
             <div className="container main-section">
                 <div className="w-layout-layout">
                     <div className="w-layout-cell">
@@ -149,7 +137,7 @@ export default function LegalCenter(){
             </div>
 
 
-            <Footer />
+            <AirbnbFooter />
         </div>
     )
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@pactsafe/pactsafe-react-sdk": "^2.12.0",
     "@webflow/webflow-cli": "^1.6.4",
     "next": "13.5.5",
     "react": "^18",
